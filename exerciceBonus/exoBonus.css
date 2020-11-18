@@ -1,5 +1,4 @@
 
-
 #rect {
     width: 200px;
     height: 100px;
@@ -9,16 +8,15 @@
 
 #roue1 {
     display: inline-block;
-
     position: relative;
-     width: 50px;
-     height: 50px;
-     left: 10px;
-     border-radius: 100%;
-     border-style: dashed;
-     background-color: blue;
-     animation-name: rotation-roue;
-     animation-duration: 10s;
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    border-radius: 100%;
+    border-style: dashed;
+    background-color: blue;
+    animation-name: rotation-roue;
+    animation-duration: 10s;
 }
 
 #roue2 {
@@ -34,7 +32,6 @@
     animation-duration: 10s;
 }
 
-
 #voiture {
     top: 150px;
     position: absolute;
@@ -42,15 +39,22 @@
     animation-duration: 10s;
 }
 
-
 @keyframes direction-voiture {
+    from {
+        transform: translate(0);
+    }
 
+    to {
+        transform: translate(1200px);
+    }
 }
 
 @keyframes rotation-roue {
 
+    100% {
+        transform: rotate(720deg);
+    }
 }
-
 
 #ciel {
     position: absolute;
@@ -105,8 +109,8 @@
     animation-duration: 20s;
 }
 
-
-
 @keyframes nuage {
-
+    100% {
+        transform: translate(1200px);
+    }
 }
